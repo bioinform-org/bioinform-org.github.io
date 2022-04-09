@@ -1,4 +1,146 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+permalink: /
+classes: wide
+header:
+  image: /assets/images/home-banner.png
 ---
+
+<head>
+<style>
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  width: 90%;
+  padding: 24px 12px 24px 12px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+  background-color: #d1c09d;
+  border-radius: 25px;
+}
+
+.card_image {
+  padding: 12px 0 12px 0;
+}
+
+.card_text {
+  min-height: 5em;
+  padding: 12px 12px 24px 12px;
+}
+
+.button {
+  background-color: #006666;
+  border-radius: 5px;
+}
+
+.logo {
+  margin: auto;
+  padding: 0 5px 0 5px;
+}
+
+.form {
+  margin: auto;
+  width: 75%;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+  background-color: #006666;
+  border-radius: 15px;
+}
+
+</style>
+</head>
+
+<center>
+
+<p><h1 class="page__title">{{ "Home" }}</h1>
+
+<!Video goes here>
+
+<p><h2>Bioinformatics</h2></p>
+
+<p>
+<div style="display: inline-block;">
+  <div class="column">
+    <img src="/assets/images/bioinformatics-sciences.png" width="400">
+  </div>
+  <div class="column" style="padding: 100px 5px 100px 5px;">
+    <p>Bioinformatics is an emerging science that focuses on the storage, retrieval and analysis of biological data.</p>
+    <p>It is a highly interdisciplinary field that involves natural sciences (biology, chemistry and physics), but also computer science and mathematics / statistics.</p>
+  </div>
+</div>
+</p>
+
+<p><h2>Latest News</h2></p>
+
+<p>
+<div style="display: flex;">
+  <div class="grid__wrapper" style="text-align: left;">
+    {% for post in site.categories["News"] limit:4 %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+  </div>
+</div>
+</p>
+
+<p><h2>Educational contents</h2></p>
+
+<p>
+<div style="display: block;">
+  <div class="column" style="padding: 0 0 100px 0;">
+    <div class="card">
+      <big><b>Training school</b></big>
+      <div class="card_image">
+        <img src="/assets/images/training-school-card.png" width="300">
+      </div>
+      <div class="card_text">
+        We organize training schools in bioinformatics for high school and undergraduate students.
+      </div>
+      <a href="/training-school/" class="btn btn--large" style="border: solid 1px; border-radius: 5px; color: #006666">Read more</a>
+    </div>
+  </div>
+  <div class="column" style="padding: 0 0 100px 0;">
+    <div class="card">
+      <big><b>Blog</b></big>
+      <div class="card_image">
+        <img src="/assets/images/blog-card.png" width="300">
+      </div>
+      <div class="card_text">
+        We write informative posts about bioinformatics but also natural sciences in general.
+      </div>
+      <a href="/blog/" class="btn btn--large" style="border: solid 1px; border-radius: 5px; color: #006666">Read more</a>
+    </div>
+  </div>
+</div>
+</p>
+
+<p><h2>Partners</h2></p>
+
+<p>
+<div style="display: inline-flex; padding: 0 0 50px 0;">
+  <div class="logo"><a href="http://smsigkovacic.me/"><img src="/assets/images/external_logos/igk_logo.png" width="200"></a></div>
+  <div class="logo"><a href="https://www.omsa.me/"><img src="/assets/images/external_logos/omsa_logo.png" width="200"></a></div>
+</div>
+</p>
+
+<p>
+<div style="display: block">
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/newsletter-subscription-success/';}"></iframe>
+  <form class="form" action="https://docs.google.com/forms/u/0/d/1wRGsf6yQDXP62HdSt6O8_4m3WZv0rFMDbt1afV0sNKw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+    <p><big><b>Subscribe to our newsletter to get notified about upcoming events</b></big></p>
+    <input name="entry.156630890" type="email" placeholder="Email" required style="border-radius: 5px;"/><br>
+    <input type="submit" class="btn btn--large" value="Subscribe" style="background-color: #b98927; border-radius: 5px;"/>
+  </form>
+</div>
+</p>
+
+</center>

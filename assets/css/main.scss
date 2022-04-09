@@ -4,5 +4,31 @@
 
 @charset "utf-8";
 
+$sans-serif: "Ubuntu";
+$monospace: "Ubuntu Mono";
+
+$dark-gray: #001414;
+$background-color: #d1bc92;
+$text-color: #001414;
+$primary-color: #006666;
+$footer-background-color: #b98927;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.masthead__menu-item {
+  font-weight: 700;
+}
+
+.masthead__menu-donate {
+  display: block;
+  list-style-type: none;
+  white-space: nowrap;
+  background-color: #b98927;
+  border-radius: 5px;
+  font-weight: 700;
+
+  &--lg {
+    padding-right: 2em;
+  }
+}

@@ -1,0 +1,36 @@
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  {% if author.avatar %}
+    <div class="author__avatar">
+      <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" class="u-photo">
+    </div>
+  {% endif %}
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      {{ author.name }}
+    </h3>
+    {% if author.position %}
+      <div class="author__bio p-note" itemprop="description">
+        {{ author.position | markdownify }}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if author.location %}
+    <div itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+      <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
+    </div>
+  {% endif %}
+
+  {% if author.languages %}
+    <i class="fas fa-fw fa-language" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.languages }}</span><br>
+  {% endif %}
+
+  {% if author.email %}
+    <a href="mailto:{{ author.email }}" rel="me" class="u-email" style="color: #001414; text-decoration: none;">
+      <meta itemprop="email" content="{{ author.email }}"/>
+      <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">{{ " Email" }}</span>
+    </a>
+  {% endif %}
+</div>

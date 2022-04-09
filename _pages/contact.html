@@ -1,0 +1,77 @@
+---
+title: Contact
+layout: splash
+permalink: /contact/
+---
+
+<head>
+<style>
+
+.container {
+  margin: auto;
+  width: 98.25%;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 0 20px 0;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.main_card {
+  min-height: 13em;
+  padding: 24px 12px 24px 12px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+  background-color: #006666;
+  border-radius: 20px;
+}
+
+.card {
+  margin: auto;
+  width: 95%;
+  min-height: 15em;
+  padding: 24px 12px 24px 12px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+  background-color: #d1c09d;
+  border-radius: 15px;
+}
+
+</style> 
+</head>
+
+<center>
+
+<p><h1 class="page__title">{{ "Contact" }}</h1></p>
+
+<p>
+<div class="container">
+  <div class="main_card">
+    {% assign author = site.author %}
+    {% include contact-profile.html %}
+  </div>
+</div>
+</p>
+
+<p>
+{% for profile in site.data.authors %}
+  {% assign author = profile[1] %}
+  {% if author.position contains "Founder" %}
+	<div class="column">
+	  <div class="card">
+		  <div itemscope itemtype="https://schema.org/Person">
+            {% include contact-profile.html %}
+		  </div>
+	  </div>
+	</div> 
+  {% endif %}
+{% endfor %}
+</p>
+
+</center>
