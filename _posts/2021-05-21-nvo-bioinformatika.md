@@ -1,5 +1,5 @@
 ---
-title: "NGO Bioinformatika founded"
+title: "NVO Bioinformatika founded"
 author: Marco Anteghini
 categories: News
 tags: [Bioinformatika]
