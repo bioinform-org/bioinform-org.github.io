@@ -2,7 +2,8 @@
 
 Katarina Elez:
   name        : Katarina Elez
-  position    : Founder, Legal representative
+  role        : Legal Representative
+  is_contact  : true
   bio         : PhD student in bioinformatics
   avatar      : "/assets/images/members/member-katarina.jpg"
   location    : Berlin, Germany
@@ -15,7 +16,8 @@ Katarina Elez:
 
 Marco Anteghini:
   name        : Marco Anteghini
-  position    : Founder, President of the Assembly
+  role        : President of the Assembly
+  is_contact  : true
   bio         : PhD student in bioinformatics
   avatar      : "/assets/images/members/member-marco.jpg"
   location    : "Berlin, Germany"
@@ -28,7 +30,8 @@ Marco Anteghini:
 
 Jelena Rašo:
   name        : Jelena Rašo
-  position    : Founder
+  role        : Administrative Coordinator
+  is_contact  : true
   avatar      : "/assets/images/members/member-jelena.jpg"
   location    : Herceg Novi, Montenegro
   email       : jelena.raso123@gmail.com
@@ -36,7 +39,6 @@ Jelena Rašo:
 
 Clelia Cortile:
   name        : Clelia Cortile
-  position    : Blog author
   bio         : Bioinformatician
   avatar      : "/assets/images/members/member-clelia.jpg"
   location    : Rome, Italy

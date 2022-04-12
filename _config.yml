@@ -83,13 +83,13 @@ twitter:
 facebook:
   username               :
   app_id                 :
-  publisher              :
+  publisher              : "https://www.facebook.com/bioinform.org"
 og_image                 : "/assets/images/bioinform-logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : "Organization" # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  name                   : "NVO Bioinformatika (Bioinform)" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
@@ -136,7 +136,10 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://www.facebook.com/bioinform.org"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube-square"
+      url: "https://www.youtube.com/channel/UCO2F8rKNp1EnCTqqW4dACpg"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bioinform-org"

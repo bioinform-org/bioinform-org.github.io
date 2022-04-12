@@ -15,7 +15,7 @@ permalink: /contact/
 .column {
   float: left;
   width: 33.3%;
-  padding: 0 0 20px 0;
+  padding: 0 0 2% 0;
 }
 
 @media screen and (max-width: 650px) {
@@ -27,17 +27,16 @@ permalink: /contact/
 
 .main_card {
   min-height: 13em;
-  padding: 24px 12px 24px 12px;
+  padding: 2% 2% 2% 2%;
   box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
   background-color: #006666;
   border-radius: 20px;
 }
 
 .card {
-  margin: auto;
   width: 95%;
-  min-height: 15em;
-  padding: 24px 12px 24px 12px;
+  min-height: 17em;
+  padding: 4% 4% 4% 4%;
   box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
   background-color: #d1c09d;
   border-radius: 15px;
@@ -62,7 +61,7 @@ permalink: /contact/
 <p>
 {% for profile in site.data.authors %}
   {% assign author = profile[1] %}
-  {% if author.position contains "Founder" %}
+  {% if author.is_contact %}
 	<div class="column">
 	  <div class="card">
 		  <div itemscope itemtype="https://schema.org/Person">
