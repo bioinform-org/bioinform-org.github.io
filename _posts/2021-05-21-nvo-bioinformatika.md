@@ -6,6 +6,7 @@ tags: [Bioinformatika]
 classes: wide
 header:
   teaser: "/assets/images/news/2021-05-21-teaser.png"
+  og_image: "/assets/images/news/2021-05-21-teaser.png"
 ---
 
 We founded Bioinformatika - Bioinformatics (Bioinform) today, a non-governmental organization focused on providing free bioinformatics education!

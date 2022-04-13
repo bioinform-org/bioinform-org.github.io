@@ -6,6 +6,7 @@ tags: [training school, BioINForming]
 classes: wide
 header:
   teaser: "/assets/images/training-school-default.png"
+  og_image: "/assets/images/training-school-default.png"
 ---
 
 Our first free-of-charge training school in bioinformatics, ["Bioinforming - Pilot"](/training-school/bioinforming-pilot/) was held from the 10th to the 14th of January 2022 in Herceg Novi, Montenegro. 
@@ -16,6 +17,6 @@ The training school covered the basics of bioinformatics with a focus on hands-o
 
 We also informed the participants about bioinformatics career paths and Erasmus+ mobility opportunities.
 
-This training school was supported by [JUSMŠ “Ivan Goran Kovačić”](http://smsigkovacic.me/) (provided space and necessary equipment), [Organization of Montenegrins Studying Abroad](https://www.omsa.me/) (helped to distribute call for applications and [preliminary survey](/news/survey/)) and [Western Balkans Alumni Association](https://www.western-balkans-alumni.eu/) (provided funding).
+This training school was supported by [JUSMŠ “Ivan Goran Kovačić”](http://smsigkovacic.me/) (provided space and necessary equipment), [Organization of Montenegrins Studying Abroad](https://www.omsa.me/) (helped to distribute call for applications and [preliminary survey](/news/survey/)), [Western Balkans Alumni Association](https://www.western-balkans-alumni.eu/) (provided funding) and [Superlab d.o.o.](http://super-lab.me/) (donated flash drives and medical supplies).
 
 
