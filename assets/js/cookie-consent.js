@@ -20,7 +20,6 @@ window.cookieconsent.initialise({
     if (type == 'opt-in' && didConsent) {
       // enable cookies
       loadGAonConsent();
-      loadAlgoliaOnConsent();
     }
   },
   onStatusChange: function(status, chosenBefore) {
@@ -29,7 +28,6 @@ window.cookieconsent.initialise({
     if (type == 'opt-in' && didConsent) {
       // enable cookies
       loadGAonConsent();
-      loadAlgoliaOnConsent();
     }
   },
   onRevokeChoice: function() {
