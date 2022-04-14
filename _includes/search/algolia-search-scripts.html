@@ -60,4 +60,7 @@ function loadAlgoliaOnConsent() {
     });
   });
 }
+function unloadAlgoliaOnNonConsent() {
+  search.removeWidgets([instantsearch.widgets.searchBox, instantsearch.widgets.hits]);
+}
 </script>
