@@ -12,7 +12,7 @@ window.cookieconsent.initialise({
   "theme": "classic",
   "type": "opt-in",
   "content": {
-    "href": "/privacy-policy"
+    "href": "/privacy-policy/"
   },
   onInitialise: function (status) {
     var type = this.options.type;
@@ -20,6 +20,7 @@ window.cookieconsent.initialise({
     if (type == 'opt-in' && didConsent) {
       // enable cookies
       loadGAonConsent();
+      loadAlgoliaOnConsent();
     }
     if (type == 'opt-out' && !didConsent) {
       // disable cookies
@@ -31,6 +32,7 @@ window.cookieconsent.initialise({
     if (type == 'opt-in' && didConsent) {
       // enable cookies
       loadGAonConsent();
+      loadAlgoliaOnConsent();
     }
     if (type == 'opt-out' && !didConsent) {
       // disable cookies
@@ -44,6 +46,7 @@ window.cookieconsent.initialise({
     if (type == 'opt-out') {
       // enable cookies
       loadGAonConsent();
+      loadAlgoliaOnConsent();
     }
   }
 });
