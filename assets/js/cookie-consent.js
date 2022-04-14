@@ -36,7 +36,6 @@ window.cookieconsent.initialise({
     var type = this.options.type;
     if (type == 'opt-in') {
       // disable cookies
-      unloadAlgoliaOnNonConsent()
     }
   }
 });
