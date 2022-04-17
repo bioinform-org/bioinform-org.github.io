@@ -4,46 +4,43 @@ Katarina Elez:
   name        : Katarina Elez
   role        : Legal Representative
   is_contact  : true
-  bio         : PhD student in bioinformatics
+  bio         : ""
   avatar      : "/assets/images/members/member-katarina.jpg"
   location    : Berlin, Germany
   email       : katarina.elez1@gmail.com
-  languages   : Montenegrin, English, Italian
+  languages   : Crnogorski, English, Italiano
   linkedin    : katarinaelez
   github      : katarinaelez
   twitter     : ElezKatarina
-#  facebook    : katarina.elez
 
 Marco Anteghini:
   name        : Marco Anteghini
   role        : President of the Assembly
   is_contact  : true
-  bio         : PhD student in bioinformatics
+  bio         : ""
   avatar      : "/assets/images/members/member-marco.jpg"
   location    : "Berlin, Germany"
   email       : marcoanteghini@yahoo.it
-  languages   : Italian, English
+  languages   : Italiano, English
   linkedin    : marco-anteghini-9a6020141
   github      : MarcoAnteghini
-#  facebook    : MarcoPoloAnteghini
-#  instagram   : marcoanteghini
 
 Jelena Rašo:
   name        : Jelena Rašo
   role        : Administrative Coordinator
   is_contact  : true
+  bio         : ""
   avatar      : "/assets/images/members/member-jelena.jpg"
   location    : Herceg Novi, Montenegro
   email       : jelena.raso123@gmail.com
-  languages   : Montenegrin, English
+  languages   : Crnogorski, English
 
 Clelia Cortile:
   name        : Clelia Cortile
-  bio         : Bioinformatician
+  bio         : ""
   avatar      : "/assets/images/members/member-clelia.jpg"
   location    : Rome, Italy
   email       : ccortile@gmail.com
   linkedin    : cleliacortile
   github      : cleliacort
-#  facebook    : clelia.cortile.5
 
