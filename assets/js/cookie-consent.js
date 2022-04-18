@@ -39,23 +39,23 @@ window.cookieconsent.initialise({
 });
 
 function loadVideos() {
-  var videos = document.querySelectorAll('.responsive-video-container');
+  var videos = document.querySelectorAll(".responsive-video-container");
   videos.forEach((video)=>{
-    var iframe = video.querySelector('iframe');
-    iframe.setAttribute('src', iframe.getAttribute('data-src'));
-    iframe.removeAttribute('data-src');
+    var iframe = video.querySelector("iframe");
+    iframe.setAttribute("src", iframe.getAttribute("data-src"));
+    iframe.removeAttribute("data-src");
     iframe.style.display="initial";
     video.querySelector(".notice--primary").style.display="none";
   });
 }
 
 function unloadVideos() {
-  var videos = document.querySelectorAll('.responsive-video-container');
+  var videos = document.querySelectorAll(".responsive-video-container");
   videos.forEach((video)=>{
-    var iframe = video.querySelector('iframe');
-    iframe.setAttribute('data-src', iframe.getAttribute('src'));
-    iframe.removeAttribute('src');
+    var iframe = video.querySelector("iframe");
+    iframe.setAttribute("data-src", iframe.getAttribute("src"));
+    iframe.removeAttribute("src");
     iframe.style.display="none";
-    video.querySelector('.notice--primary').style.display="initial";
+    video.querySelector(".notice--primary").style.display="inline-flex";
   });
 }
