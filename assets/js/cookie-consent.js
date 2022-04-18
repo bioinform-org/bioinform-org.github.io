@@ -45,7 +45,7 @@ function loadVideos() {
     iframe.setAttribute('src', iframe.getAttribute('data-src'));
     iframe.removeAttribute('data-src');
     iframe.style.display="initial";
-    video.querySelector('.notice').style.display="none";
+    video.querySelector(".notice--primary").style.display="none";
   });
 }
 
@@ -56,6 +56,6 @@ function unloadVideos() {
     iframe.setAttribute('data-src', iframe.getAttribute('src'));
     iframe.removeAttribute('src');
     iframe.style.display="none";
-    video.querySelector('.notice').style.display="initial";
+    video.querySelector('.notice--primary').style.display="initial";
   });
 }
