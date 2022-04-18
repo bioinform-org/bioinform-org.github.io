@@ -17,23 +17,45 @@ window.cookieconsent.initialise({
   onInitialise: function (status) {
     var type = this.options.type;
     var didConsent = this.hasConsented();
-    if (type == 'opt-in' && didConsent) {
+    if (didConsent) {
       // enable cookies
-      loadGAonConsent();
+      loadVideos();
+      loadGA();
     }
   },
   onStatusChange: function(status, chosenBefore) {
     var type = this.options.type;
     var didConsent = this.hasConsented();
-    if (type == 'opt-in' && didConsent) {
+    if (didConsent) {
       // enable cookies
-      loadGAonConsent();
+      loadVideos();
+      loadGA();
     }
-  },
-  onRevokeChoice: function() {
-    var type = this.options.type;
-    if (type == 'opt-in') {
-      // disable cookies
+    else {
+      //disable cookies
+      unloadVideos();
     }
   }
 });
+
+function loadVideos() {
+  var videos = document.querySelectorAll('.responsive-video-container');
+  videos.forEach((video)=>{
+    var iframe = video.querySelector('iframe');
+    iframe.setAttribute('src', iframe.getAttribute('data-src'));
+    iframe.removeAttribute('data-src');
+    iframe.style.display="initial";
+    video.querySelector('.notice').style.display="none";
+  });
+}
+
+function unloadVideos() {
+  var videos = document.querySelectorAll('.responsive-video-container');
+  videos.forEach((video)=>{
+    var iframe = video.querySelector('iframe');
+    iframe.setAttribute('data-src', iframe.getAttribute('src'));
+    iframe.removeAttribute('src');
+    iframe.style.display="none";
+    video.querySelector('.notice').style.display="initial";
+  });
+}
