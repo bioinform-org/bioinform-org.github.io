@@ -67,6 +67,11 @@ algolia:
   index_name             : "all" # YOUR_INDEX_NAME
   search_only_api_key    : "a82ce6737544fd29a9f5ccbe09cc1d1c" # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : false # true (default), false
+  files_to_exclude:
+    - _pages/google405aabdb560f40fe.html
+    - _pages/newsletter-subscription-success.html
+    - _pages/privacy-policy.html
+    - _pages/terms-and-conditions.html
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
