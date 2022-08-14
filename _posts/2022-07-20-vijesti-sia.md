@@ -9,7 +9,7 @@ header:
   og_image: "/assets/images/news-default.png"
 ---
 
-Our team "BioINForming" has been chosen among the 10 finalist for [Social Impact Award Montenegro](https://montenegro.socialimpactaward.net/) (SIA).
+Our team "BioINForming" has been chosen among the 10 finalists for [Social Impact Award Montenegro](https://montenegro.socialimpactaward.net/) (SIA).
 Journal "Vijesti" published an article about the SIA project and the teams that made it to the incubation phase.
 
 Our idea consists in providing free educational content in bioinformatics to interested young students from all social backgrounds.
