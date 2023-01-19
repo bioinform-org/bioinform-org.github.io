@@ -28,7 +28,6 @@ Marco Anteghini:
 Jelena Rašo:
   name        : Jelena Rašo
   role        : Administrative Coordinator
-  is_contact  : true
   bio         : ""
   avatar      : "/assets/images/members/member-jelena.jpg"
   location    : Herceg Novi, Montenegro
@@ -37,10 +36,13 @@ Jelena Rašo:
 
 Selle Bandstra:
   name        : Selle Bandstra
+  role        : Project Manager
+  is_contact  : true
   bio         : ""
   avatar      : "/assets/images/members/member-selle.jpg"
   location    : Berlin, Germany
   email       : sellebandstra@gmail.com
+  languages   : Nederlander, English
   linkedin    : sellebandstra
   github      : selleban
   twitter     : SelleBandstra
