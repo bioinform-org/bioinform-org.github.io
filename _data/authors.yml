@@ -15,7 +15,7 @@ Katarina Elez:
 
 Marco Anteghini:
   name        : Marco Anteghini
-  role        : President of the Assembly
+  role        : Founder
   is_contact  : true
   bio         : ""
   avatar      : "/assets/images/members/member-marco.jpg"
@@ -36,7 +36,7 @@ Jelena Rašo:
 
 Selle Bandstra:
   name        : Selle Bandstra
-  role        : Project Manager
+  role        : President of the Assembly
   is_contact  : true
   bio         : ""
   avatar      : "/assets/images/members/member-selle.jpg"
