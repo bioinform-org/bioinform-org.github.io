@@ -152,7 +152,7 @@ footer:
       url: "https://twitter.com/bioinform_org"
     - label: "Youtube"
       icon: "fab fa-fw fa-youtube-square"
-      url: "https://www.youtube.com/channel/UCO2F8rKNp1EnCTqqW4dACpg"
+      url: "https://www.youtube.com/@bioinform_org"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bioinform-org"
