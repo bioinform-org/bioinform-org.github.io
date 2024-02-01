@@ -2,7 +2,7 @@
 title: Bioinform at BioHackathon Europe 2022
 author: Marco Anteghini
 categories: News
-tags: [presentation, Bioinformatika, Bioinforming]
+tags: [presentation, biohackathon, course design, Bioinforming]
 classes: wide
 header:
   teaser: "/assets/images/news/2022-07-11-teaser.png"
