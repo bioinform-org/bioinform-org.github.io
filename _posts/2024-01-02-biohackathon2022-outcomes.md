@@ -29,5 +29,3 @@ Our approach to structuring training schools and improving bioinformatics educat
 
 # Looking Ahead
 Reflecting on our experience at the BioHackathon, we are inspired by the potential to expand our educational programs across Europe, enriching the content of our training schools and fostering a wider network of collaboration.
-
-For more information on our training programs and how you can get involved, please visit our training school page.
