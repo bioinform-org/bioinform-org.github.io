@@ -5,11 +5,11 @@ categories: News
 tags: [presentation, Bioinformatika, Bioinforming]
 classes: wide
 header:
-  teaser: "/assets/images/news/2022-07-11-teaser.png"
-  og_image: "/assets/images/news/2022-07-11-teaser.png"
+  teaser: "/assets/images/news/2024-02-01-teaser.png"
+  og_image: "/assets/images/news/2022-02-01-teaser.png"
 ---
 
-Our participation in the [BioHackathon Europe 2022](https://biohackathon-europe.org/index.html)  marked a significant milestone for Bioinform as we collaborated with international researchers to address bioinformatics challenges. The event in Paris showcased 35 projects, including our [Bioinforming project](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/3), dedicated to fostering educational advancements in bioinformatics.
+Our participation in the [BioHackathon Europe 2022](https://biohackathon-europe.org/index.html) marked a significant milestone for Bioinform as we collaborated with international researchers to address bioinformatics challenges. The event in Paris showcased 35 projects, including our [Bioinforming project](https://github.com/elixir-europe/biohackathon-projects-2022/tree/main/3), dedicated to fostering educational advancements in bioinformatics.
 
 The BioHackathon, organized by [ELIXIR Europe](https://elixir-europe.org/), is known for its collaborative, non-competitive atmosphere where experts advance open-source infrastructure for data integration, engage in community-driven projects, and strengthen ties within the ELIXIR network. Our project aimed to harness this collaborative spirit to design a comprehensive five-day bioinformatics training school tailored to young learners across different educational backgrounds.
 
