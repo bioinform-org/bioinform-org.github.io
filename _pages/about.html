@@ -12,14 +12,12 @@ permalink: /about/
   width: 25%;
   padding: 0 0 4% 0;
 }
-
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
   }
 }
-
 .card {
   width: 92.5%;
   min-height: 41em;
@@ -28,13 +26,136 @@ permalink: /about/
   background-color: #d1c09d;
   border-radius: 20px;
 }
-
 .card_title {
   min-height: 3em;
 }
-
 .li {
   padding-left: 0;
+}
+
+.wrapper{
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.wrapper .center-line{
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #006666;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.wrapper .row{
+  display: flex;
+}
+.wrapper .row-1{
+  justify-content: flex-start;
+}
+.wrapper .row-2{
+  justify-content: flex-end;
+}
+.wrapper .row section{
+  background: #d1c09d;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+}
+.wrapper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #d1c09d;
+  top: 28px;
+  transform: rotate(45deg);
+}
+.row-1 section::before{
+  right: -7px;
+}
+.row-2 section::before{
+  left: -7px;
+}
+.row section .icon,
+.center-line .scroll-icon{
+  position: absolute;
+  background: #006666;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #d1c09d;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #006666, inset 0 2px 0 rgba(0,0,0,0.15), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+.row-1 section .icon{
+  top: 15px;
+  right: -60px;
+}
+.row-2 section .icon{
+  top: 15px;
+  left: -60px;
+}
+.row section .details,
+.row section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row section .details .title{
+  font-weight: 600;
+}
+.row section p{
+  margin: 10px 0 17px 0;
+  text-align: left;
+}
+.row section .bottom a{
+  text-decoration: none;
+  background: #006666;
+  color: #000000;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+@media(max-width: 790px){
+  .wrapper .center-line{
+    left: 40px;
+  }
+  .wrapper .row{
+    margin: 30px 0 3px 60px;
+  }
+  .wrapper .row section{
+    width: 100%;
+  }
+  .row-1 section::before{
+    left: -7px;
+  }
+  .row-1 section .icon{
+    left: -60px;
+  }
+}
+@media(max-width: 440px){
+  .wrapper .center-line,
+  .row section::before,
+  .row section .icon{
+    display: none;
+  }
+  .wrapper .row{
+    margin: 10px 0;
+  }
 }
 
 </style>
@@ -46,13 +167,6 @@ permalink: /about/
 
 <p>
 Bioinformatika (Bioinform) is a non-governmental organization (NGO) registered in Montenegro. We are focused on providing free educational content in bioinformatics and science in general. We offer guidance on bioinformatics career paths to young students. In addition, we are dedicated to raising awareness of the position of women in science and the protection of the environment.
-</p>
-
-<p><h2>Reports</h2></p>
-
-<p>
-<a href="https://drive.google.com/file/d/1qqpWasGRalsC98qeZwTJdBs6hQmRUzYD/view">2022 - Statement of financial position - Balance sheet</a><br>
-<a href="https://drive.google.com/file/d/1fHNOHigFOCBJ3s87O2MFDdeDoZ2Omipq/view">2022 - Statement of financial performance - Income sheet</a><br>
 </p>
 
 <p><h2>Our Youth Goals</h2></p>
@@ -125,4 +239,222 @@ Bioinformatika (Bioinform) is a non-governmental organization (NGO) registered i
 </div>
 </p>
 
-<center>
+<p><h2>Financial statements</h2></p>
+
+<p>
+<a href="https://drive.google.com/file/d/1qqpWasGRalsC98qeZwTJdBs6hQmRUzYD/view">2022 - Statement of financial position - Balance sheet</a><br>
+<a href="https://drive.google.com/file/d/1fHNOHigFOCBJ3s87O2MFDdeDoZ2Omipq/view">2022 - Statement of financial performance - Income sheet</a><br>
+</p>
+
+<p><h2>Timeline</h2></p>
+
+<div class="timeline">
+  <div class="wrapper">
+    <div class="center-line">
+      <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-graduation-cap"></i>
+        <div class="details">
+          <span class="title">Bioinforming 3.0</span>
+          <span>09-13/01/2024</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Herceg Novi (Montenegro)</p>
+        <p>We organized a training school for high school students with 13 participants (7 in-person and 6 online) and 3 lecturers (2 in-person and 1 online).</p>
+        <div class="bottom">
+          <a href="/training-school/bioinforming-3.0/">Read more</a>
+          Bioinforming 3.0
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-file-powerpoint"></i>
+        <div class="details">
+          <span class="title">OECD workshop</span>
+          <span>18/10/2023</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Online</p>
+        <p>At a workshop organized by the <a href="https://www.oecd.org/">Organisation for Economic Co-operation and Development (OECD)</a>, we presented our initiative as an example of how to make tech more diverse.</p>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-wrench"></i>
+        <div class="details">
+          <span class="title">Bioinforming Hackathon</span>
+          <span>17-18/06/2023</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Online</p>
+        <p>We organized a hackathon with 38 participants divided into 7 teams that worked on developing machine learning models for the identification of plant resistance genes.</p>
+        <div class="bottom">
+          <a href="https://www.kaggle.com/competitions/bioinformatics-hackathon-prg">Read more</a>
+          Bioinforming the youth
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-graduation-cap"></i>
+        <div class="details">
+          <span class="title">Bioinforming Skopje</span>
+          <span>08-12/05/2023</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Skopje (North Macedonia)</p>
+        <p>We organized a training school for undergraduate students with 13 participants and 3 lecturers.</p>
+        <div class="bottom">
+          <a href="/training-school/bioinforming-the-youth-skopje/">Read more</a>
+          Bioinforming the youth
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-graduation-cap"></i>
+        <div class="details">
+          <span class="title">Bioinforming Novi Sad</span>
+          <span>24-28/04/2023</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Novi Sad (Serbia)</p>
+        <p>We organized a training school for undergraduate students with 23 participants and 3 lecturers.</p>
+        <div class="bottom">
+          <a href="/training-school/bioinforming-the-youth-novi-sad/">Read more</a>
+          Bioinforming the youth
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-graduation-cap"></i>
+        <div class="details">
+          <span class="title">Bioinforming 2.0</span>
+          <span>09-13/01/2023</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Herceg Novi (Montenegro)</p>
+        <p>We organized a training school for high school students with 18 participants (8 in-person and 10 online) and 3 lecturers (2 in-person and 1 online).</p>
+        <div class="bottom">
+          <a href="/training-school/bioinforming-2.0/">Read more</a>
+          Bioinforming 2.0
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-file-powerpoint"></i>
+        <div class="details">
+          <span class="title">Cohort call of the OLS program</span>
+          <span>20/12/2022</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Online</p>
+        <p>We gave a talk on public engagement during a call of the 6th cohort of the <a href="https://openlifesci.org/">Open Life Science (OLS)</a> program.</p>
+        <div class="bottom">
+          <a href="https://openlifesci.org/openseeds/ols-6/schedule.html#week-14">Read more</a>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-users"></i>
+        <div class="details">
+          <span class="title">SIA Summit</span>
+          <span>15-19/11/2022</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Vienna (Austria)</p>
+        <p>As SIA Montenegro winners, we had the opportunity to participate at the <a href="https://summit.socialimpactaward.net/">SIA global summit</a> and connect with other social entrepreneurs.</p>
+        <div class="bottom">
+          <a href="/news/2022/12/05/sia-experience/">Read more</a>
+          Social Impact Award
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-wrench"></i>
+        <div class="details">
+          <span class="title">BioHackathon Europe</span>
+          <span>07-11/11/2022</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Paris (France)</p>
+        <p>At a hackathon organized by <a href="https://elixir-europe.org/">ELIXIR Europe</a>, we worked together with other researchers to improve our training school curriculum.</p>
+        <div class="bottom">
+          <a href="/news/2023/05/18/biohackathon2022-outcomes/">Read more</a>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-award"></i>
+        <div class="details">
+          <span class="title">SIA pitch and award ceremony</span>
+          <span>01/10/2022</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Tivat (Montenegro)</p>
+        <p>We pitched our "Bioinforming" idea and were awarded second place by the expert jury, composed of representatives of academic and business community.</p>
+        <div class="bottom">
+          <span></span>
+          Social Impact Award
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-wrench"></i>
+        <div class="details">
+          <span class="title">SIA incubation</span>
+          <span>07/2022 - 09/2022</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Online</p>
+        <p>As part of the <a href="https://montenegro.socialimpactaward.net/">Social Impact Award (SIA)</a> program, we worked on developing our "Bioinforming" idea with the help of our mentor Biljana Sekulić from <a href="https://ictcortex.me/">ICT Cortex</a>.</p>
+        <div class="bottom">
+          <span></span>
+          Social Impact Award
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-file-powerpoint"></i>
+        <div class="details">
+          <span class="title">PerICo spring training school</span>
+          <span>27/04/2022</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Berlin (Germany)</p>
+        <p>We presented our initiative to 13 PhD students of the PerICo consortium as an example of the science communication career path.</p>
+        <div class="bottom">
+          <a href="/news/2022/05/01/perico-training/">Read more</a>
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-graduation-cap"></i>
+        <div class="details">
+          <span class="title">Bioinforming - Pilot</span>
+          <span>10-14/01/2022</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Herceg Novi (Montenegro)</p>
+        <p>We organized a training school for high school students with 6 participants (5 in-person and 1 online) and 2 lecturers.</p>
+        <div class="bottom">
+          <a href="/training-school/bioinforming-pilot/">Read more</a>
+          Bioinforming - Pilot
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-rocket"></i>
+        <div class="details">
+          <span class="title">Registration of Bioinformatika</span>
+          <span class="date">21/10/2021</span>
+        </div>
+        <p><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Podgorica (Montenegro)</p>
+        <p>Ministry of Public Administration, Digital Society and Media officially registered Bioinformatika as a non-governmental association.</p>
+        <div class="bottom">
+          <a href="/news/2021/05/21/nvo-bioinformatika/">Read more</a>
+          Bioinforming - Pilot
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
