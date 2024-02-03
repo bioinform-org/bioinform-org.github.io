@@ -114,7 +114,7 @@ author:
   bio              :
   location         : "Herceg Novi, Montenegro"
   email            : "bioinform.org@gmail.com"
-  languages        : "Crnogorski, English, Italiano"
+  languages        : "Crnogorski, English"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
