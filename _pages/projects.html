@@ -1,37 +1,45 @@
 ---
-title: About
+title: Projects
 layout: splash
-permalink: /about/
+permalink: /projects/
 ---
 
 <head>
 <style>
 
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 0 4% 0;
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
 }
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-    font-size: 14px;
+@media screen and (max-width: 790px) {
+  .container {
+    font-size: 10px;
   }
 }
+@media screen and (max-width: 370px) {
+  .container {
+    font-size: 8px;
+  }
+}
+.column {
+  float: left;
+  padding: 0 0 8% 0;
+}
 .card {
-  width: 92.5%;
-  min-height: 39em;
+  width: 90%;
+  min-height: 16em;
   padding: 4% 4% 4% 4%;
   box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
   background-color: #d1c09d;
-  border-radius: 20px;
+  border-radius: 25px;
+  text-align: left;
 }
 .card_title {
-  min-height: 3em;
-}
-.li {
-  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 0% 1% 0%;
 }
 
 .wrapper{
@@ -166,76 +174,74 @@ permalink: /about/
 
 <center>
 
-<p><h1 class="page__title">{{ "About" }}</h1></p>
+<p><h1 class="page__title">{{ "Projects" }}</h1></p>
 
 <p>
-Bioinformatika (Bioinform) is a non-governmental organization (NGO) registered in Montenegro. We are focused on providing free educational content in bioinformatics and science in general. We offer guidance on bioinformatics career paths to young students. In addition, we are dedicated to raising awareness of the position of women in science and the protection of the environment.
-</p>
-
-<p>
-<a href="https://youth-goals.eu/">Youth Goals</a> were developed through a consultation with young people from all over Europe and therefore reflect the views of European youth. These are the Youth Goals that we share:
-</p>
-
-<p>
-<div class="column">
-  <div class="card">
-    <div class="card_title">
-      <b>Quality Learning</b>
+<div class="container">
+  <div class="column">
+    <div class="card">
+      <div class="card_title">
+        <span class="title"><b>Bioinforming 3.0</b></span>
+        <span>10/2023 - 01/2024</span>
+      </div>
+      Role: Lead partner<br>
+      Partners: <a href="https://smsigkovacic.me/">JUSMŠ "Ivan Goran Kovačić"</a><br>
+      Support: <a href="https://hercegnovi.me/">Municipality of Herceg Novi</a><br>
+      Budget: 1049.78 EUR<br>
+      Description: Organization of a 5-day winter school in bioinformatics for high school students.<br>
     </div>
-    <a href="https://youth-goals.eu/yg8">
-      <figure>
-        <img src="https://youth-goals.eu/wp-content/themes/yootheme/cache/BJV_Youth-Goals_255x210mm_CMYK_fill-8-3882abcb.webp" width="255" height="210">
-        <figcaption>Youth Goal 8 / Mireille van Bremen / CC BY-NC-ND</figcaption>
-      </figure>
-    </a>
-    <p>Guarantee equal access to quality education.</p>
-    <p>Create and implement learner-centered methods.</p>
-    <p>Support the development of critical and analytical thinking, as well as interpersonal skills.</p>
   </div>
-</div>
-<div class="column">
-  <div class="card">
-    <div class="card_title">
-      <b>Equality of All Genders</b>
+  <div class="column">
+    <div class="card">
+      <div class="card_title">
+        <span class="title"><b>Bioinforming the youth</b></span>
+        <span>01/2023 - 06/2023</span>
+      </div>
+      Role: Lead partner<br>
+      Partners: <a href="">EduSmart</a>, <a href="https://vtsns.edu.rs/">HETSPS in Novi Sad</a>, <a href="https://unt.edu.mk/en/">Mother Teresa University</a><br>
+      Support: <a href="https://westernbalkansfund.org/">Western Balkans Fund</a><br>
+      Budget: 11474.3 EUR<br>
+      Description: Organization of two 5-day training schools in bioinformatics for undergraduate students and an online hackathon.<br>
     </div>
-    <a href="https://youth-goals.eu/yg2">
-      <figure>
-        <img src="https://youth-goals.eu/wp-content/themes/yootheme/cache/BJV_Youth-Goals_255x210mm_CMYK_fill-2-1024x819-1fe364d9.webp" width="255" height="210">
-        <figcaption>Youth Goal 2 / Mireille van Bremen / CC BY-NC-ND</figcaption>
-      </figure>
-    </a>
-    <p>Ensure that all genders have equal access to education.</p>
-    <p>Raise awareness of gender-based inequality and discrimination.</p>
-    <p>Empower girls and women through technology.</p>
   </div>
-</div>
-<div class="column">
-  <div class="card">
-    <div class="card_title">
-      <b>Inclusive Societies</b>
+  <div class="column">
+    <div class="card">
+      <div class="card_title">
+        <span class="title"><b>Bioinforming 2.0</b></span>
+        <span>10/2022 - 01/2023</span>
+      </div>
+      Role: Lead partner<br>
+      Partners: <a href="https://smsigkovacic.me/">JUSMŠ "Ivan Goran Kovačić"</a><br>
+      Support: <a href="https://montenegro.socialimpactaward.net/">Social Impact Award Montenegro</a> and <a href="https://hercegnovi.me/">Municipality of Herceg Novi</a><br>
+      Budget: 1947.48 EUR<br>
+      Description: Organization of a 5-day winter school in bioinformatics for high school students.<br>
     </div>
-    <a href="https://youth-goals.eu/yg3">
-      <figure>
-        <img src="https://youth-goals.eu/wp-content/themes/yootheme/cache/BJV_Youth-Goals_255x210mm_CMYK_fill-3-192bb076.webp" width="255" height="210">
-        <figcaption>Youth Goal 3 / Mireille van Bremen / CC BY-NC-ND</figcaption>
-      </figure>
-    </a>
-    <p>Ensure that all marginalised people have equal access to education.</p>
-    <p>Address all the dimensions of inclusion.</p>
   </div>
-</div>
-<div class="column">
-  <div class="card">
-    <div class="card_title">
-      <b>Youth Organisations & European Programmes</b>
+  <div class="column">
+    <div class="card">
+      <div class="card_title">
+        <span class="title"><b>Social Impact Award</b></span>
+        <span>07/2022 - 11/2022</span>
+      </div>
+      Role: Finalist and Jury award winner<br>
+      Partners: None<br>
+      Support: <a href="https://montenegro.socialimpactaward.net/">Social Impact Award Montenegro</a><br>
+      Budget: NA<br>
+      Description: Incubation, award ceremony and participation at the SIA Summit.<br>
     </div>
-    <a href="https://youth-goals.eu/yg11">
-      <figure>
-        <img src="https://youth-goals.eu/wp-content/themes/yootheme/cache/BJV_Youth-Goals_255x210mm_CMYK_fill-11-b7ef7080.webp" width="255" height="210">
-        <figcaption>Youth Goal 11 / Mireille van Bremen / CC BY-NC-ND</figcaption>
-      </figure>
-    </a>
-    <p>Increase visibility and accessibility of European youth programs and youth organization by providing quality information.</p>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="card_title">
+        <span class="title"><b>Bioinforming - Pilot</b></span>
+        <span>10/2021 - 01/2022</span>
+      </div>
+      Role: Lead partner<br>
+      Partners: <a href="https://smsigkovacic.me/">JUSMŠ "Ivan Goran Kovačić"</a> and <a href="https://www.omsa.me/">Organization of Montenegrins Studying Abroad</a><br>
+      Support: <a href="https://www.western-balkans-alumni.eu/">Western Balkans Alumni Association</a><br>
+      Budget: 1522.16 EUR<br>
+      Description: Organization of a 5-day winter school in bioinformatics for high school students.<br>
+    </div>
   </div>
 </div>
 </p>

@@ -109,7 +109,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "NVO Bioinformatika (Bioinform)"
+  name             : "Bioinformatika (Bioinform)"
   avatar           : "/assets/images/bioinform-avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              :
   location         : "Herceg Novi, Montenegro"
