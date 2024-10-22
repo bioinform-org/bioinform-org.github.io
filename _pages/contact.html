@@ -62,13 +62,13 @@ permalink: /contact/
 {% for profile in site.data.authors %}
   {% assign author = profile[1] %}
   {% if author.is_contact %}
-	<div class="column">
-	  <div class="card">
-		  <div itemscope itemtype="https://schema.org/Person">
-            {% include contact-profile.html %}
-		  </div>
-	  </div>
-	</div> 
+    <div class="column">
+      <div class="card">
+        <div itemscope itemtype="https://schema.org/Person">
+          {% include contact-profile.html %}
+        </div>
+      </div>
+    </div> 
   {% endif %}
 {% endfor %}
 </p>
